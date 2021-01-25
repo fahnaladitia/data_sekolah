@@ -62,7 +62,7 @@ public class AppController {
     //Edit Nama kelas
     @RequestMapping("/editKelas/{id}")
     public ModelAndView showEditKelasForm(@PathVariable(name = "id") Integer id) {
-        ModelAndView mav = new ModelAndView("edit_Kelas");
+        ModelAndView mav = new ModelAndView("edit_kelas");
 
         Kelas kelas = kelasService.get(id);
         mav.addObject("kelas",kelas);
